@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\scripts\reducers\**" />
+    <Content Remove="wwwroot\scripts\reducers\**" />
+    <EmbeddedResource Remove="wwwroot\scripts\reducers\**" />
+    <None Remove="wwwroot\scripts\reducers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\scripts\actions.js" />
+    <Content Include="wwwroot\scripts\App.css" />
+    <Content Include="wwwroot\scripts\Board.js" />
+    <Content Include="wwwroot\scripts\components\containers\Board.js" />
+    <Content Include="wwwroot\scripts\components\containers\Board.jsx" />
+    <Content Include="wwwroot\scripts\components\containers\Note.js" />
+    <Content Include="wwwroot\scripts\components\index.js" />
+    <Content Include="wwwroot\scripts\components\ui\Board.js" />
+    <Content Include="wwwroot\scripts\components\ui\Note.js" />
+    <Content Include="wwwroot\scripts\constants.js" />
+    <Content Include="wwwroot\scripts\initialState.json" />
+    <Content Include="wwwroot\scripts\Note.js" />
+    <Content Include="wwwroot\scripts\routes.js" />
+    <Content Include="wwwroot\scripts\selectors\index.js" />
+    <Content Include="wwwroot\scripts\selectors\utilities.js" />
+    <Content Include="wwwroot\scripts\Service\NotesService.js" />
+    <Content Include="wwwroot\scripts\tests\board.spec.js" />
+    <Content Include="wwwroot\scripts\tests\note.spec.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\index.css" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\index.js" />
+    <None Include="wwwroot\scripts\App.css" />
+    <None Include="wwwroot\scripts\Board.js" />
+    <None Include="wwwroot\scripts\Note.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+<testsuites name="jest tests">
+  <testsuite name="\wwwroot\scripts\tests\board.spec.js" tests="1" errors="0" failures="0" skipped="0" timestamp="2017-06-19T20:13:56" time="2.433">
+    <testcase classname="Board-when add button is clikced handleAddNoteClicked should be called once" name="Board-when add button is clikced handleAddNoteClicked should be called once" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="\wwwroot\scripts\tests\note.spec.js" tests="3" errors="0" failures="0" skipped="0" timestamp="2017-06-19T20:13:58" time="0.238">
+    <testcase classname="Note-when edit button is clikced handleEditClicked should be called once" name="Note-when edit button is clikced handleEditClicked should be called once" time="0.002">
+    </testcase>
+    <testcase classname="Note-when delete button is clikced handleDeleteClicked should be called once" name="Note-when delete button is clikced handleDeleteClicked should be called once" time="0.001">
+    </testcase>
+    <testcase classname="Note-when save button is clikced handleSaveClicked should be called once" name="Note-when save button is clikced handleSaveClicked should be called once" time="0.004">
+    </testcase>
+  </testsuite>
+</testsuites>
